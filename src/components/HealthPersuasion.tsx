@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { useIsMobile } from '../hooks/useIsMobile';
+// @ts-ignore
+import alignerImage from '../../rovnatka-spark-hero.png';
 
 export default function HealthPersuasion() {
   const isMobile = useIsMobile();
@@ -81,7 +83,7 @@ export default function HealthPersuasion() {
                 className="relative z-10 w-[22rem] h-auto flex items-center justify-center"
               >
                 <img 
-                  src="/rovnatka-spark-hero.png" 
+                  src={alignerImage} 
                   alt="Invisible dental braces teeth aligner" 
                   referrerPolicy="no-referrer"
                   className="w-full h-auto drop-shadow-[0_15px_35px_rgba(59,130,246,0.15)] object-contain select-none pointer-events-none"
@@ -133,7 +135,7 @@ export default function HealthPersuasion() {
                 className="relative z-10 w-[38rem] h-auto flex items-center justify-center select-none pointer-events-none"
               >
                 <img 
-                  src="/rovnatka-spark-hero.png" 
+                  src={alignerImage} 
                   alt="Invisible dental braces teeth aligner" 
                   referrerPolicy="no-referrer"
                   className="w-full h-auto drop-shadow-[0_25px_50px_rgba(59,130,246,0.18)] object-contain"

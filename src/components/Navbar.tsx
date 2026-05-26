@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Phone, Mail, Menu, X, Clock } from 'lucide-react';
 // @ts-ignore
 import toothIcon from '../../tooth.png';
+// @ts-ignore
+import logoutIcon from '../../logout.png';
 
 interface NavbarProps {
   currentPage: 'home' | 'postup' | 'aktuality' | 'admin';
@@ -89,7 +91,7 @@ export default function Navbar({ currentPage, onNavigateToHome, onNavigateToPost
             >
               <span>Odhlásit se</span>
               <img
-                src="/logout.png"
+                src={logoutIcon}
                 alt=""
                 aria-hidden="true"
                 className="h-4 w-4 object-contain"

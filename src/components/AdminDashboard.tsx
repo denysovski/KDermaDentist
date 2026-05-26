@@ -3,6 +3,12 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import ArticleEditor from './ArticleEditor';
 import { Check, Plus, Trash2 } from 'lucide-react';
+// @ts-ignore
+import addIcon from '../../add.png';
+// @ts-ignore
+import composeIcon from '../../compose.png';
+// @ts-ignore
+import noResultsIcon from '../../no-results.png';
 import {
   ArticleRecord,
   createAdminArticle,
@@ -276,7 +282,7 @@ export default function AdminDashboard({ token, onLogout }: AdminDashboardProps)
               Přidejte článek pro pacienty s novinkami, doporučením nebo oznámením, které chcete hned publikovat nebo uložit jako koncept.
             </p>
           </div>
-          <img src="/add.png" alt="Přidat článek" className="ml-[-100px] h-[150px] w-auto shrink-0 object-contain self-center" style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }} />
+          <img src={addIcon} alt="Přidat článek" className="ml-[-100px] h-[150px] w-auto shrink-0 object-contain self-center" style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }} />
         </div>
       </button>
 
@@ -340,7 +346,7 @@ export default function AdminDashboard({ token, onLogout }: AdminDashboardProps)
           ) : hasFilteredOutEverything ? (
             <div className="rounded-[2rem] border border-slate-200 bg-white px-6 py-10 md:px-10 md:py-14 flex flex-col items-center justify-center text-center">
               <h3 className="text-center text-xl md:text-2xl font-display font-bold text-[#0F172A]">Žádné články neodpovídají filtrování</h3>
-              <img src="/no-results.png" alt="No results" className="mt-6 h-[150px] w-auto max-w-full object-contain" />
+              <img src={noResultsIcon} alt="No results" className="mt-6 h-[150px] w-auto max-w-full object-contain" />
             </div>
           ) : visibleArticles.length === 0 ? (
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 text-slate-500">Žádné články ještě neexistují.</div>
@@ -367,7 +373,7 @@ export default function AdminDashboard({ token, onLogout }: AdminDashboardProps)
 
                   <div className="flex flex-col gap-2 lg:min-w-[180px] lg:items-end">
                     <button onClick={() => onEdit(article.id)} className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-blue px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-blue/20 transition hover:bg-blue-700 cursor-pointer lg:w-40">
-                      <img src="/compose.png" alt="Upravit" className="h-4 w-4 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }} />
+                      <img src={composeIcon} alt="Upravit" className="h-4 w-4 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(100%)' }} />
                       Upravit
                     </button>
                     <button onClick={() => onTogglePublish(article)} className="inline-flex w-full items-center justify-center rounded-full border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-600 transition hover:border-brand-blue hover:text-brand-blue cursor-pointer lg:w-40">
