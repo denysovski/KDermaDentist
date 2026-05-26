@@ -1,0 +1,81 @@
+export type SeedScheduleItem = {
+  id: string;
+  title: string;
+  time: string;
+};
+
+export type SeedArticle = {
+  id: string;
+  title: string;
+  description: string;
+  content: string;
+  date: string;
+  published: boolean;
+  category: string;
+  schedule: SeedScheduleItem[];
+  createdAt: string;
+  updatedAt: string;
+};
+
+export const defaultArticles: SeedArticle[] = [
+  {
+    id: 'seed-1',
+    title: 'Otevírací doba o letních prázdninách',
+    description: 'Vážený pacienti, rádi bychom Vás informovali o plánované úpravě otevírací doby během letních měsíců. Od 1. července do 31. srpna bude ordinace otevřena pro akutní případy v upravených časech.',
+    content: 'Vážený pacienti,\n\nrádi bychom Vás s předstihem informovali o úpravě naší otevírací doby během nadcházejících letních měsíců. Od 1. července do 31. srpna 2026 bude ordinace K-DERMA v Telči fungovat v upraveném režimu:\n\n• Pondělí: 7:30 – 13:00\n• Úterý: 7:30 – 13:00\n• Středa: 7:30 – 13:00\n• Čtvrtek: 7:30 – 13:00\n• Pátek: Pouze pro objednané zákroky a akutní stavy (7:30 – 11:30)\n\nBěhem celých prázdnin budeme plně k dispozici pro akutní opravy zámků a potíže s aparáty, doporučujeme se však předem telefonicky objednat na konkrétní čas, abychom zamezili dlouhému čekání v čekárně.\n\nPřejeme Vám krásné prožití léta a spoustu důvodů k úsměvu!\n\nTým K-DERMA',
+    date: '2026-05-22T00:00:00.000Z',
+    category: 'Oznámení',
+    published: true,
+    schedule: [],
+    createdAt: '2026-05-22T00:00:00.000Z',
+    updatedAt: '2026-05-22T00:00:00.000Z',
+  },
+  {
+    id: 'seed-2',
+    title: 'Nové technologie v ordinaci: Ultra-přesný 3D intraorální scanner',
+    description: 'Zapomeňte na nepříjemné sádrové otisky. Pořídili jsme nejmodernější 3D scanner, který bleskově vytvoří digitální otisk Vašeho chrupu s maximální přesností.',
+    content: 'S radostí oznamujeme další velký technologický krok pro naši kliniku! Do ordinace v Telči jsme pořídili nejmodernější intraorální 3D scanner.\n\nCo to znamená pro Vás jako pacienty?\n\n1. Maximální komfort: Už žádné dávivé pocity při klasickém otiskování pomocí lžic a sádrové či silikonové hmoty. Celé skenování probíhá pomocí malé ruční kamery, kterou jemně přejíždíme po zubech.\n2. Rychlost: Digitální otisk je hotový během několika minut a okamžitě ho vidíte spolu s lékařem na monitoru počítače.\n3. Dokonalá přesnost: S přesností v řádu mikrometrů scanner zachytí i ty nejmenší detaily, což nám umožňuje navrhnout dokonale sedící fixní rovnátka i moderní neviditelné dlahy Foilix.\n\nTěšíme se na Vaši návštěvu, kde si technologii skenování sami vyzkoušíte!',
+    date: '2026-05-15T00:00:00.000Z',
+    category: 'Technologie',
+    published: true,
+    schedule: [],
+    createdAt: '2026-05-15T00:00:00.000Z',
+    updatedAt: '2026-05-15T00:00:00.000Z',
+  },
+  {
+    id: 'seed-3',
+    title: 'Dentální hygiena jako základní stavební kámen ortodontické léčby',
+    description: 'Nošení rovnátek klade zvýšené nároky na čištění zubů. Čisté zuby se totiž pohybují rychleji, bezpečněji a bez rizika vzniku nevzhledných skvrn pod zámky.',
+    content: 'Začali jste nosit fixní rovnátka nebo na ně teprve čekáte? Pak vězte, že Vaším nejlepším přítelem na celé této cestě bude dentální hygienista.\n\nKolem zámků, drátků a gumiček se přirozeně zachytává mnohem více zbytků jídla a plaku než obvykle. Pokud plak pravidelně a správně neodstraňujete, hrozí demineralizace skloviny (která se po sundání rovnátek projeví jako bílé křídové skvrny) nebo vznik zánětu dásní.\n\nNaše doporučení pro pacienty s rovnátky:\n• Navštivte dentální hygienu ideálně každé 3 až 4 měsíce.\n• Používejte speciální jednosvazkový (Solo) kartáček a mezizubní kartáčky odpovídajících rozměrů.\n• Čistěte zuby po každém jídle.\n\nAbychom Vám tuto péči usnadnili, pro všechny stávající pacienty v ortodontické léčbě nabízíme zvýhodněnou cenu na dentální hygienu včetně nácviku domácího čištění.',
+    date: '2026-05-03T00:00:00.000Z',
+    category: 'Poradenství',
+    published: true,
+    schedule: [],
+    createdAt: '2026-05-03T00:00:00.000Z',
+    updatedAt: '2026-05-03T00:00:00.000Z',
+  },
+  {
+    id: 'seed-4',
+    title: 'Přijímáme nové pacienty na ortodontické konzultace',
+    description: 'Máme aktuálně volné kapacity pro registraci a konzultace nových dětských i dospělých pacientů. Pomůžeme Vám dosáhnout vysněného úsměvu s nejmodernější péčí.',
+    content: 'Rádi byste pro sebe nebo své děti zajistili moderní rovnátka a špičkovou péči v Telči a okolí? Máme pro Vás skvělou zprávu.\n\nKlinika K-DERMA aktuálně otevírá nové kapacity pro registrace pacientů k ortodontické konzultaci a následné léčbě. Přijímáme pacienty všech věkových kategorií.\n\nJak postupovat?\n1. Vyplňte náš jednoduchý online formulář na webu nebo nám zatelefonujte.\n2. Nabídneme Vám termín úvodní konzultace, na které zhodnotíme stav zubů a navrhneme možnosti nápravy.\n3. Sestavíme individuální plán a přizpůsobíme léčbu Vašim časovým i finančním možnostem.\n\nNeváhejte nás kontaktovat, počet nových míst je limitovaný pro zachování maximálního standardu a rychlosti péče.',
+    date: '2026-04-20T00:00:00.000Z',
+    category: 'Oznámení',
+    published: true,
+    schedule: [],
+    createdAt: '2026-04-20T00:00:00.000Z',
+    updatedAt: '2026-04-20T00:00:00.000Z',
+  },
+  {
+    id: 'seed-5',
+    title: 'Jak efektivně pečovat o neviditelná rovnátka Foilix',
+    description: 'Neviditelná rovnátka Foilix s sebou přinášejí obrovskou svobodu, vyžadují však správný režim. Přečtěte si základní doporučení pro dokonalý průběh léčby.',
+    content: 'Fóliový systém Foilix je revolucí v ortodoncii – je takřka neviditelný, nesmírně pohodlný a snadno vyjímatelný. Aby však zuby putovaly přesně tak, jak máme naplánováno v 3D simulaci, je nutné dodržovat několik zásad:\n\n• Noste dlahy poctivě 22 hodin denně: Sundávejte je pouze na jídlo a čištění zubů. Každá hodina navíc mimo ústa prodlužuje celkovou léčbu.\n• Pijte pouze čistou vodu: Před pitím kávy, slazených nápojů nebo čaje rovnátka vždy vyjměte, abyste předešli jejich zabarvení či usazování cukru pod dlahami.\n• Čištění dlah: Dlahy čistěte jemným kartáčkem a vlažnou vodou, případně speciálním čisticím mýdlem či tabletami. Nikdy nepoužívejte horkou vodu, mohla by plast deformovat.\n\nPokud se Vám náhodou dlaha poškodí nebo ji ztratíte, ihned nás kontaktujte, abychom zvolili další nejvhodnější postup.',
+    date: '2026-04-05T00:00:00.000Z',
+    category: 'Poradenství',
+    published: true,
+    schedule: [],
+    createdAt: '2026-04-05T00:00:00.000Z',
+    updatedAt: '2026-04-05T00:00:00.000Z',
+  },
+];

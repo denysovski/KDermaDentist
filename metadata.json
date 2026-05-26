@@ -1,0 +1,8 @@
+{
+  "name": "K-DERMA Telč - Moderní Ortodoncie",
+  "description": "Prémiová ortodontická péče s důrazem na moderní technologie a individuální přístup v Telči.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KDermaDentist</title>
+    <script>
+      (function () {
+        var basePath = '/KDermaDentist/';
+        var pathname = window.location.pathname;
+        var relativePath = pathname.indexOf(basePath) === 0 ? pathname.slice(basePath.length) : pathname.replace(/^\//, '');
+
+        if (!relativePath) {
+          window.location.replace(basePath);
+          return;
+        }
+
+        window.location.replace(basePath + '#/' + relativePath.replace(/^\//, ''));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
