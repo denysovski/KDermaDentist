@@ -13,26 +13,26 @@ export default function ContactForm() {
   return (
     <section id="kontakt" className="relative overflow-hidden py-32 bg-white">
       <motion.div
-        initial={{ x: 200, opacity: 0 }}
+        initial={{ x: 260, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.4 }}
         className="pointer-events-none absolute right-0 top-1/2 hidden h-[800px] w-[52vw] -translate-y-1/2 xl:block"
       >
         <motion.div
           aria-hidden="true"
-          className="absolute right-[-140px] top-1/2 h-[740px] w-[740px] -translate-y-1/2 rounded-full bg-brand-blue/15 blur-3xl"
-          initial={{ scale: 0.6, x: 150, opacity: 0 }}
+          className="absolute right-[-140px] top-1/2 h-[760px] w-[760px] -translate-y-1/2 rounded-full bg-[#4B8CFF]/20 blur-3xl"
+          initial={{ scale: 0.45, x: 180, opacity: 0 }}
           whileInView={{ scale: 1, x: 0, opacity: 1 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 1.45, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.4 }}
         />
 
         <motion.div
           aria-hidden="true"
-          className="absolute right-[-40px] top-1/2 h-[640px] w-[640px] -translate-y-1/2 rounded-full bg-brand-blue/12"
-          initial={{ scale: 0.6, x: 120, opacity: 0 }}
+          className="absolute right-[-40px] top-1/2 h-[660px] w-[660px] -translate-y-1/2 rounded-full bg-[#4B8CFF]/14"
+          initial={{ scale: 0.4, x: 150, opacity: 0 }}
           whileInView={{ scale: 1, x: 0, opacity: 1 }}
-          transition={{ duration: 1.0, delay: 0.12, ease: 'easeOut' }}
+          transition={{ duration: 1.35, delay: 0.1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.4 }}
         />
 
@@ -41,9 +41,9 @@ export default function ContactForm() {
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-contain object-right opacity-100 drop-shadow-2xl"
-          initial={{ scale: 0.85 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 0.95, ease: 'easeOut' }}
+          initial={{ scale: 0.58, x: 80, opacity: 0 }}
+          whileInView={{ scale: 1, x: 0, opacity: 1 }}
+          transition={{ duration: 1.55, delay: 0.08, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.4 }}
         />
       </motion.div>
