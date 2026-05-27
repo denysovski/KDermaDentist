@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { User, ArrowRight } from 'lucide-react';
 import { useIsMobile } from '../hooks/useIsMobile';
+import aboutUsImage from '../assets/images/about-us-image.png';
 
 interface AboutProps {
   onNavigateToPostup?: () => void;
@@ -9,7 +10,6 @@ interface AboutProps {
 
 export default function About({ onNavigateToPostup = () => {}, onNavigateToTeam = () => {} }: AboutProps) {
   const isMobile = useIsMobile();
-  const aboutImageSrc = `${import.meta.env.BASE_URL}about-us-image.png`;
 
   const animLeft = isMobile
     ? { initial: { opacity: 1, x: 0 }, whileInView: { opacity: 1, x: 0 } }
@@ -31,7 +31,7 @@ export default function About({ onNavigateToPostup = () => {}, onNavigateToTeam 
           >
             <div className="relative aspect-3/4 rounded-[3rem] overflow-hidden shadow-2xl">
               <img 
-                src={aboutImageSrc} 
+                src={aboutUsImage} 
                 alt="Moderní ortodontická klinika K-Derma Telč - rovnátka a čelistní ortodontie" 
                 className="w-full h-full object-cover"
               />
