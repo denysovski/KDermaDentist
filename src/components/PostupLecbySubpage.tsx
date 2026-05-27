@@ -243,7 +243,7 @@ export default function PostupLecbySubpage({ onBack, initialStep }: PostupLecbyS
                   <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
                     <div className="flex items-center gap-3">
                       <div>
-                        <span className="block text-xs font-bold uppercase tracking-widest text-[#3B82F6]">{s.step}</span>
+                        <span className="block text-xs font-bold uppercase tracking-widest text-brand-blue">{s.step}</span>
                         <h2 className="text-2xl md:text-3.5xl font-display font-bold text-[#0F172A] leading-tight select-none">
                           {s.title}
                         </h2>
@@ -259,13 +259,13 @@ export default function PostupLecbySubpage({ onBack, initialStep }: PostupLecbyS
                   {/* Grid pro obrázek a body */}
                   <div className="grid md:grid-cols-2 gap-10 items-stretch mb-8">
                     {/* Obrázek */}
-                    <div className="rounded-[2rem] overflow-hidden aspect-[4/3] bg-slate-100 relative group min-h-[220px]">
+                    <div className="rounded-4xl overflow-hidden aspect-4/3 bg-slate-100 relative group min-h-55">
                       <img 
                         src={s.image} 
                         alt={s.title} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none" />
+                      <div className="absolute inset-0 bg-linear-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none" />
                     </div>
 
                     {/* Co vás konkrétně čeká */}
@@ -278,7 +278,7 @@ export default function PostupLecbySubpage({ onBack, initialStep }: PostupLecbyS
                         <ul className="space-y-3.5">
                           {s.aspects.map((aspect, asIdx) => (
                             <li key={asIdx} className="flex items-start gap-2.5 text-slate-500 text-sm leading-relaxed">
-                              <span className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 bg-brand-blue" />
+                              <span className="w-1.5 h-1.5 rounded-full mt-2 shrink-0 bg-brand-blue" />
                               <span>{aspect}</span>
                             </li>
                           ))}
@@ -295,7 +295,7 @@ export default function PostupLecbySubpage({ onBack, initialStep }: PostupLecbyS
 
                   {/* FAQ box */}
                   <div className="p-6 rounded-2xl bg-blue-50/30 border border-blue-100/50 flex gap-4 items-start">
-                    <div className="p-2 rounded-xl bg-blue-50 text-brand-blue flex-shrink-0 mt-0.5">
+                    <div className="p-2 rounded-xl bg-blue-50 text-brand-blue shrink-0 mt-0.5">
                       <HelpCircle size={18} />
                     </div>
                     <div>
@@ -312,7 +312,7 @@ export default function PostupLecbySubpage({ onBack, initialStep }: PostupLecbyS
       </div>
 
       {/* Spodní akční sekce */}
-      <div className="container mx-auto px-6 mt-20">
+      <div className="container mx-auto px-6 mt-10 md:mt-20">
         <div className="bg-[#0F172A] text-white p-12 md:p-16 rounded-[3.5rem] relative overflow-hidden shadow-2xl">
           {/* Kulaté dekorativní gradienty */}
           <div className="absolute -top-24 -right-24 w-80 h-80 bg-brand-blue/30 rounded-full blur-[100px]" />

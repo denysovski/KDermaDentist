@@ -28,13 +28,13 @@ export default function About({ onNavigateToPostup = () => {}, onNavigateToTeam 
             style={{ opacity: isMobile ? 1 : 0 }}
             className="relative"
           >
-            <div className="relative aspect-[3/4] rounded-[3rem] overflow-hidden shadow-2xl">
+            <div className="relative aspect-3/4 rounded-[3rem] overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1728342057953-94bfad8f0e7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="/about-us-image.png" 
                 alt="Moderní ortodontická klinika K-Derma Telč - rovnátka a čelistní ortodontie" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-x-0 bottom-0 h-[44%] bg-gradient-to-t from-slate-950/90 via-slate-950/55 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-[44%] bg-linear-to-t from-slate-950/90 via-slate-950/55 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 flex flex-col items-start gap-3">
                 <div className="max-w-[72%]">
                   <h4 className="text-sm md:text-base font-extrabold uppercase tracking-wider text-white mb-2">Zkušenosti:</h4>
@@ -42,7 +42,7 @@ export default function About({ onNavigateToPostup = () => {}, onNavigateToTeam 
                     Přes dekádu elitní praxe, moderních technologických postupů a stovek úspěšně vyléčených ortodontických vad.
                   </p>
                 </div>
-                <span className="inline-flex items-center justify-center rounded-r-[2rem] rounded-l-[0.9rem] bg-brand-blue px-4 py-3 text-white font-display font-black text-xl md:text-2xl shadow-xl border-0">
+                <span className="inline-flex items-center justify-center rounded-r-4xl rounded-l-[0.9rem] bg-brand-blue px-4 py-3 text-white font-display font-black text-xl md:text-2xl shadow-xl border-0">
                   10+ LET
                 </span>
               </div>
@@ -91,7 +91,7 @@ export default function About({ onNavigateToPostup = () => {}, onNavigateToTeam 
                 <div className="flex items-end justify-between w-full">
                   <div>
                     <h4 className="text-2xl font-display font-semibold mb-2 group-hover:translate-x-1 transition-transform duration-300">Postup léčby</h4>
-                    <p className="text-white/80 text-xs leading-relaxed max-w-[220px] md:max-w-[240px]">
+                    <p className="text-white/80 text-xs leading-relaxed max-w-55 md:max-w-60">
                       Projděte si krok za krokem celou cestu k vašemu vysněnému úsměvu.
                     </p>
                   </div>
