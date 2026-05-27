@@ -43,7 +43,7 @@ export default function About({ onNavigateToPostup = () => {}, onNavigateToTeam 
                     Přes dekádu elitní praxe, moderních technologických postupů a stovek úspěšně vyléčených ortodontických vad.
                   </p>
                 </div>
-                <span className="inline-flex items-center justify-center rounded-r-4xl rounded-l-[0.9rem] bg-brand-blue px-4 py-3 text-white font-display font-black text-xl md:text-2xl shadow-xl border-0">
+                <span className="inline-flex self-end w-fit items-center justify-center rounded-full bg-brand-blue px-4 py-2.5 md:px-5 md:py-3 text-white font-display font-black text-sm md:text-2xl shadow-xl border-0 mt-1 md:mt-2">
                   10+ LET
                 </span>
               </div>
