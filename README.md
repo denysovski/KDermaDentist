@@ -1,70 +1,88 @@
-# KDermaDentist
+# K‑DERMA
 
-KDermaDentist is a premium orthodontic clinic website built as a React single-page experience with a polished public front end, animated sections, and an admin area for managing news content. The design is tuned to feel clean, modern, and patient-friendly while still giving the site a strong editorial presence.
+K‑DERMA is a single-page React site for a premium dermatology/clinic experience. It combines a polished marketing front-end with a lightweight admin area and a small Express API for article management. The design focuses on clear information hierarchy, approachable visuals, and smooth micro-interactions.
 
-The public experience uses bundled fallback content so the main marketing pages stay readable even when the local API is not running. The admin and article management flows still rely on the Express backend in `server.ts` during local development.
+**What It Includes**
+- **Fixed navigation:** a floating, glass-styled nav that keeps the brand visible while you scroll.
+- **Polished hero:** cinematic hero area with strong typography, CTA and optional frame-sequence animation experiments.
+- **Content sections:** About, Services, Team, Equipment, Testimonials and Contact with map and contact form.
+- **News & editor:** Aktuality (news) list that loads live content from a local API or falls back to seeded articles.
+- **Admin dashboard:** protected admin UI for creating and editing articles and schedules.
+- **Interactive UI details:** buttons, reveal effects, and a small drawer-style CTA for appointment booking.
 
-## What It Includes
+**Key Sections**
+- **Hero:** full-bleed headline and primary CTA that establishes the visual tone.
+- **About & Services:** service summaries and treatment flow that educate visitors.
+- **Aktuality (News):** article list, single-article view and editorial cards.
+- **Team & Testimonials:** staff profiles, credentials and patient feedback for credibility.
+- **Contact:** embedded map, phone/mail links and a short booking CTA.
+- **Admin:** login, article editor and schedule editor used by clinic staff.
 
-   A refined landing page with hero content, service highlights, trust signals, and contact sections that introduce the clinic quickly.
-   A news and updates area that loads live articles when the API is available and falls back to seeded content when it is not.
-   A treatment-flow subpage that explains the process in a more guided, step-by-step format.
-   A protected admin dashboard for logging in, editing articles, and managing scheduled content.
-   A responsive contact section with map, form, and supporting clinic details.
-   Motion-driven UI details and card transitions that make the site feel more premium without becoming distracting.
+**Technologies**
+- **React 19**: UI framework powering the SPA.
+- **Vite**: fast dev server and build tooling.
+- **TypeScript**: typed codebase for reliability.
+- **Tailwind CSS 4**: utility-first styling and design tokens.
+- **motion**: animation primitives used across the UI.
+- **Express**: small local API used by admin/article flows (`server.ts`).
 
-## Key Sections
+**Visual Style**
+- **Palette:** soft whites and neutral surfaces with a brand blue accent.
+- **Typography:** `Plus Jakarta Sans` / `Outfit` for display headings and `Inter` for UI/body text (see `src/index.css`).
+- **Texture:** subtle glass, rounded cards, soft shadows and restrained motion to keep the site feeling premium and calm.
 
-   The hero section establishes the brand with a large visual frame, strong typography, and clear calls to action.
-   The about and services sections explain the clinic offering in a concise, trustworthy way.
-   The updates section surfaces the latest clinic news and educational articles.
-   The team, equipment, and testimonials sections add credibility and social proof.
-   The contact section brings together the map, form, and practical visitor information.
-   The admin pages support content editing without exposing the management flow to regular visitors.
+**Project Structure (high level)**
+- **[src/](src/)**: React app sources and components (see `src/components/` for sections and UI building blocks).
+- **[public/](public/)**: static assets and fallback files used at runtime.
+- **data/kderma-db.json**: seeded articles and local data store.
+- **defaultArticles.ts**: fallback articles used when the API is unavailable.
+- **server.ts**: small Express API used for article management during development.
+- **package.json**: scripts and dependencies used by the project.
 
-## Technologies
+**Development**
+Install dependencies and run the local dev server and API:
 
-   React 19
-   Vite
-   TypeScript
-   Tailwind CSS 4
-   Motion for UI transitions
-   Express for the local API
-   GitHub Pages for static deployment
+```bash
+npm install
+npm run dev       # starts Vite frontend (port 3000)
+npm run api       # starts the local Express API (server.ts)
+```
 
-## Visual Style
+Build and preview production output:
 
-The design leans into a calm medical aesthetic with a stronger premium finish:
+```bash
+npm run build
+npm run preview
+```
 
-   Soft white and blue surfaces for clarity and trust.
-   Dark slate text for readable contrast.
-   Gentle shadows, rounded cards, and layered spacing.
-   Blue accent details to reinforce the clinic identity.
-   Smooth motion and subtle reveal effects instead of heavy animation.
+Run TypeScript checks:
 
-## Project Structure
+```bash
+npm run lint
+```
 
-   src/App.tsx controls the page routing and high-level layout.
-   src/components/ contains the marketing sections, admin UI, and content modules.
-   src/lib/kdermaApi.ts handles article and admin API requests.
-   defaultArticles.ts provides fallback article content for the public news area.
-   server.ts runs the local Express API used by the admin and articles features.
-   .github/workflows/deploy.yml publishes the built site to GitHub Pages.
+**Local configuration & environment**
+- The API uses `server.ts` for local article CRUD; you can run it with `npm run api` during development.
+- Static data is stored in `data/kderma-db.json`; editing that file will change seeded content.
 
-## Development
+**Deployment / GitHub**
+- This project can be published to GitHub Pages or any static host that serves the `dist/` build.
 
-   npm install installs dependencies.
-   npm run dev starts the Vite frontend on port 3000.
-   npm run api starts the local Express backend on port 3001.
-   npm run build creates the production bundle for GitHub Pages.
-   npm run lint runs the TypeScript check.
+Commit and push example:
 
-## Live Site
+```bash
+git add .
+git commit -m "chore: update README and docs"
+git push origin main
+```
 
-GitHub Pages deployment is configured for the repository path `/KDermaDentist/`.
+If you want, I can create a `.github/workflows/deploy.yml` workflow or update an existing one to automatically publish `dist/` after each release.
 
-The public site will be available at:
+---
 
-https://<your-github-username>.github.io/KDermaDentist/
+If you'd like, I can also:
+- generate a short screenshot of the navbar branding,
+- add a small CONTRIBUTING section with dev setup tips, or
+- open a PR that adds a GitHub Actions deploy workflow.
 
-The admin and article management features still need the Express API from `server.ts` or another hosted backend to be fully functional outside local development.
+Readme updated: [README.md](README.md)
