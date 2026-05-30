@@ -50,7 +50,7 @@ Install dependencies and run the local dev server and API:
 - This project can be published to GitHub Pages or any static host that serves the `dist/` build.
 
 **Live Preview**
-Link to the website: https://denysovski.github.io/KDermaDentist/
+- Link to the website: https://denysovski.github.io/KDermaDentist/
 
 <img alt="Bright_Stationery_Mockup_4" src="https://github.com/user-attachments/assets/1e576a17-dc09-466c-a4cf-330f1e718cd4" />
 <img alt="Showcase2" src="https://github.com/user-attachments/assets/6ae59df4-6288-4557-9720-f95daa7c6029" />
