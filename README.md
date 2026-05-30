@@ -39,9 +39,6 @@ K‑DERMA is a single-page React site for a premium dermatology/clinic experienc
 - **server.ts**: small Express API used for article management during development.
 - **package.json**: scripts and dependencies used by the project.
 
-**Development**
-Install dependencies and run the local dev server and API:
-
 **Local configuration & environment**
 - The API uses `server.ts` for local article CRUD; you can run it with `npm run api` during development.
 - Static data is stored in `data/kderma-db.json`; editing that file will change seeded content.
