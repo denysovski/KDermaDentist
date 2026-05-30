@@ -42,25 +42,6 @@ K‑DERMA is a single-page React site for a premium dermatology/clinic experienc
 **Development**
 Install dependencies and run the local dev server and API:
 
-```bash
-npm install
-npm run dev       # starts Vite frontend (port 3000)
-npm run api       # starts the local Express API (server.ts)
-```
-
-Build and preview production output:
-
-```bash
-npm run build
-npm run preview
-```
-
-Run TypeScript checks:
-
-```bash
-npm run lint
-```
-
 **Local configuration & environment**
 - The API uses `server.ts` for local article CRUD; you can run it with `npm run api` during development.
 - Static data is stored in `data/kderma-db.json`; editing that file will change seeded content.
@@ -68,21 +49,8 @@ npm run lint
 **Deployment / GitHub**
 - This project can be published to GitHub Pages or any static host that serves the `dist/` build.
 
-Commit and push example:
+**Live Preview**
+Link to the website: https://denysovski.github.io/KDermaDentist/
 
-```bash
-git add .
-git commit -m "chore: update README and docs"
-git push origin main
-```
-
-If you want, I can create a `.github/workflows/deploy.yml` workflow or update an existing one to automatically publish `dist/` after each release.
-
----
-
-If you'd like, I can also:
-- generate a short screenshot of the navbar branding,
-- add a small CONTRIBUTING section with dev setup tips, or
-- open a PR that adds a GitHub Actions deploy workflow.
-
-Readme updated: [README.md](README.md)
+<img alt="Bright_Stationery_Mockup_4" src="https://github.com/user-attachments/assets/1e576a17-dc09-466c-a4cf-330f1e718cd4" />
+<img alt="Showcase2" src="https://github.com/user-attachments/assets/6ae59df4-6288-4557-9720-f95daa7c6029" />
